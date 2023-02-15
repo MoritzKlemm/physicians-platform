@@ -1,92 +1,156 @@
-# Physicians Platform
+<p align="center">
+  <a href="https://strapi.io/#gh-light-mode-only">
+    <img src="https://strapi.io/assets/strapi-logo-dark.svg" width="318px" alt="Strapi logo" />
+  </a>
+  <a href="https://strapi.io/#gh-dark-mode-only">
+    <img src="https://strapi.io/assets/strapi-logo-light.svg" width="318px" alt="Strapi logo" />
+  </a>
+</p>
 
+<h3 align="center">API creation made simple, secure and fast.</h3>
+<p align="center">The most advanced open-source headless CMS to build powerful APIs with no effort.</p>
+<p align="center"><a href="https://strapi.io/cloud">Cloud</a> · <a href="https://strapi.io/demo">Try live demo</a></p>
+<br />
 
+<p align="center">
+  <a href="https://www.npmjs.org/package/@strapi/strapi">
+    <img src="https://img.shields.io/npm/v/@strapi/strapi/latest.svg" alt="NPM Version" />
+  </a>
+  <a href="https://github.com/strapi/strapi/actions/workflows/tests.yml">
+    <img src="https://github.com/strapi/strapi/actions/workflows/tests.yml/badge.svg?branch=main" alt="Tests" />
+  </a>
+  <a href="https://discord.strapi.io">
+    <img src="https://img.shields.io/discord/811989166782021633?label=Discord" alt="Strapi on Discord" />
+  </a>
+  <a href="https://github.com/strapi/strapi/actions/workflows/nightly.yml">
+    <img src="https://github.com/strapi/strapi/actions/workflows/nightly.yml/badge.svg" alt="Strapi Nightly Release Build Status" />
+  </a>
+</p>
 
-## Getting started
+<br>
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+<p align="center">
+  <a href="https://strapi.io">
+    <img src="https://raw.githubusercontent.com/strapi/strapi/0bcebf77b37182fe021cb59cc19be8f5db4a18ac/public/assets/administration_panel.png" alt="Administration panel" />
+  </a>
+</p>
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+<br>
 
-## Add your files
+Strapi is a free and open-source headless CMS delivering your content anywhere you need.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- **Keep control over your data**. With Strapi, you know where your data is stored, and you keep full control at all times.
+- **Self-hosted**. You can host and scale Strapi projects the way you want. You can choose any hosting platform you want: AWS, Render, Netlify, Heroku, a VPS, or a dedicated server. You can scale as you grow, 100% independent.
+- **Database agnostic**. Strapi works with SQL databases. You can choose the database you prefer: PostgreSQL, MySQL, MariaDB, and SQLite.
+- **Customizable**. You can quickly build your logic by fully customizing APIs, routes, or plugins to fit your needs perfectly.
 
+## Getting Started
+
+<a href="https://docs.strapi.io/developer-docs/latest/getting-started/quick-start.html" target="_blank">Read the Getting Started tutorial</a> or follow the steps below:
+
+### ⏳ Installation
+
+Install Strapi with this **Quickstart** command to create a Strapi project instantly:
+
+- (Use **yarn** to install the Strapi project (recommended). [Install yarn with these docs](https://yarnpkg.com/lang/en/docs/install/).)
+
+```bash
+yarn create strapi-app my-project --quickstart
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/moritz_klemm/physicians-platform.git
-git branch -M main
-git push -uf origin main
+
+**or**
+
+- (Use npm/npx to install the Strapi project.)
+
+```bash
+npx create-strapi-app my-project --quickstart
 ```
 
-## Integrate with your tools
+This command generates a brand new project with the default features (authentication, permissions, content management, content type builder & file upload). The **Quickstart** command installs Strapi using a **SQLite** database which is used for prototyping in development.
 
-- [ ] [Set up project integrations](https://gitlab.com/moritz_klemm/physicians-platform/-/settings/integrations)
+Enjoy 🎉
 
-## Collaborate with your team
+### 🖐 Requirements
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Complete installation requirements can be found in the documentation under <a href="https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html">Installation Requirements</a>.
 
-## Test and Deploy
+**Supported operating systems**:
 
-Use the built-in continuous integration in GitLab.
+- Ubuntu LTS/Debian 9.x
+- CentOS/RHEL 8
+- macOS Mojave
+- Windows 10
+- Docker
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+(Please note that Strapi may work on other operating systems, but these are not tested nor officially supported at this time.)
 
-***
+**Node:**
 
-# Editing this README
+Strapi only supports maintenance and LTS versions of Node.js. Please refer to the <a href="https://nodejs.org/en/about/releases/">Node.js release schedule</a> for more information. NPM versions installed by default with Node.js are supported. Generally it's recommended to use yarn over npm where possible.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+| Strapi Version | Recommended | Minimum |
+| -------------- | ----------- | ------- |
+| 4.3.9 and up   | 18.x        | 14.x    |
+| 4.0.x to 4.3.8 | 16.x        | 14.x    |
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+**Database:**
 
-## Name
-Choose a self-explaining name for your project.
+| Database   | Recommended | Minimum |
+| ---------- | ----------- | ------- |
+| MySQL      | 8.0         | 5.7.8   |
+| MariaDB    | 10.6        | 10.3    |
+| PostgreSQL | 14.0        | 11.0    |
+| SQLite     | 3           | 3       |
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+**We recommend always using the latest version of Strapi stable to start your new projects**.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Features
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- **Modern Admin Panel:** Elegant, entirely customizable and a fully extensible admin panel.
+- **Secure by default:** Reusable policies, CORS, CSP, P3P, Xframe, XSS, and more.
+- **Plugins Oriented:** Install the auth system, content management, custom plugins, and more, in seconds.
+- **Blazing Fast:** Built on top of Node.js, Strapi delivers amazing performance.
+- **Front-end Agnostic:** Use any front-end framework (React, Vue, Angular, etc.), mobile apps or even IoT.
+- **Powerful CLI:** Scaffold projects and APIs on the fly.
+- **SQL databases:** Works with PostgreSQL, MySQL, MariaDB, and SQLite.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+**[See more on our website](https://strapi.io/overview)**.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request to the project.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+## Community support
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+For general help using Strapi, please refer to [the official Strapi documentation](https://docs.strapi.io). For additional help, you can use one of these channels to ask a question:
+
+- [Discord](https://discord.strapi.io) (For live discussion with the Community and Strapi team)
+- [GitHub](https://github.com/strapi/strapi) (Bug reports, Contributions)
+- [Community Forum](https://forum.strapi.io) (Questions and Discussions)
+- [Feedback section](https://feedback.strapi.io) (Roadmap, Feature requests)
+- [Twitter](https://twitter.com/strapijs) (Get the news fast)
+- [Facebook](https://www.facebook.com/Strapi-616063331867161)
+- [YouTube Channel](https://www.youtube.com/strapi) (Learn from Video Tutorials)
+
+## Migration
+
+Follow our [migration guides](https://docs.strapi.io/developer-docs/latest/update-migration-guides/migration-guides.html) on the documentation to keep your projects up-to-date.
+
+## Roadmap
+
+Check out our [roadmap](https://feedback.strapi.io) to get informed of the latest features released and the upcoming ones. You may also give us insights and vote for a specific feature.
+
+## Documentation
+
+See our dedicated [repository](https://github.com/strapi/documentation) for the Strapi documentation, or view our documentation live:
+
+- [Developer docs](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html)
+- [User guide](https://docs.strapi.io/user-docs/latest/getting-started/introduction.html)
+
+## Try live demo
+
+See for yourself what's under the hood by getting access to a [hosted Strapi project](https://strapi.io/demo) with sample data.
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+See the [LICENSE](./LICENSE) file for licensing information.
